@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+:root {
+  --serif: "Bodoni Moda", serif;
+  --sans-serif: "Montserrat", sans-serif;
+}
+
+body, body::after, body::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  font-family: var(--sans-serif);
+}
+
+body * {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body>div {
+  display: flex;
+}
+
+#pic-bg {
+  background-image: url("https://res.cloudinary.com/theavocadocoder/image/upload/v1647702348/zemakech-images/shawarma-close-up3_ywopg3.jpg");
+  width: 37.3%;
+  height: 100%;
+}
+
+#logo-bg {
+  height: 14.6%;
+  margin-top: 41.5%;
+  padding: 20px;
+  background-color: rgba(0,0,0,.6);
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-img {
+  height: 100%;
+}
+
+#logo-bg > span {
+  color: white;
+  margin-left: 20px;
+  font-size: 200%;
+  line-height: 100%;
+  font-family: var(--serif);
+  text-align: center;
+}
+
+#text-bg {
+  width: 62.7%;
+  height: 100%;
+  background-color: snow;
+  justify-content: center;
+  gap: 2;
+}
+
+#text-bg > div#writeup-div {
+  padding-left: 30px;
+  padding-top: 11%;
+  padding-right: 100px;
+  padding-bottom: 40px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+#text-bg > div#form-bg {
+  background-color: white;
+  height: 29.5%;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.13);
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+form {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#form-bg > form label {
+  font-size: 8px;
+  font-weight: bold;
+
+}
+
+form > div {
+  gap: 40px;
+}
+
+form input {
+  font-size: 12px;
+  font-weight: bold;
+  height: 22px;
+  border: 1px solid #E5E7EB;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid lightskyblue;
+  box-shadow: 1px 1px 2px lightgray;
+}
+
+#text-bg > div#control-div {
+  height: 29.5%;
+  padding: 20px 30px;
+  font-size: 12px;
+}
+
+button#button {
+  border: none;
+  padding: 9px 35px;
+  border-radius: 5px;
+  background-color: orangered;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+#control-div > span {
+  margin-top: 20px;
+  display: block;
+}
+
+/* Classes */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-screen {
+  width: calc(100vh * 1.41015625);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.password-input {
+  border: 1px solid red;
+}
+
+/* Media Queries */
+
+/* Mobile */
+@media screen and (
+  max-width: 768px
+) {
+  body>div {
+    flex-direction: column;
+  }
+
+  #pic-bg {
+    width: 100%;
+    height: 37.3%;
+  }
+
+  #logo-bg {
+    padding: 15px;
+  }
+
+  #text-bg {
+    width: 100%;
+    height: 62.7%;
+  }
+}
