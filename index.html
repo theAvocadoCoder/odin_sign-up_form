@@ -23,12 +23,14 @@
     </div>
 
     <!-- Text Area -->
-    <div>
+    <div id="text-bg" class="flex flex-col">
       <!-- Writeup -->
-      <div>
+      <div id="writeup-div">
         <p>
           This is a real online service. This is a real online service. This is a real online service. This is a real
-          online service. This is a real online service.
+          online service.
+          <br>
+          This is a real online service.
         </p>
         <br>
         <p>
@@ -36,23 +38,55 @@
         </p>
       </div>
       <!-- Form -->
-      <div>
+      <div id="form-bg">
         It's a Form!
-        <form action="" method="">
-          <label for="firstname">First Name</label>
-          <input type="text">
+        <form action="" method="" class="flex flex-col m-20">
 
-          <label for="lastname">Last Name</label>
-          <input type="text">
+          <div class="flex">
+            <div>
+              <label for="firstname">FIRST NAME</label>
+              <br>
+              <input type="text" title="Enter you first name">
+            </div>
 
-          <label for="email">Email</label>
-          <input type="email">
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <br>
+              <input type="text" title="Enter your last name">
+            </div>
+          </div>
 
-          <label for="phonenumber">Phone Number</label>
-          <input type="number">
+          <div class="flex">
+            <div>
+              <label for="email">EMAIL</label>
+              <br>
+              <input type="email" title="Enter a valid email address" pattern="[a-z0-9]+@[a-z]+.[a-z]+">
+            </div>
 
-          <label for="password">Password</label>
-          <input type="password">
+            <div>
+              <label for="phonenumber">PHONE NUMBER</label>
+              <br>
+              <input type="number" title="Enter a valid phone number of 11 numeric characters" pattern="[0-9]{11,11}"
+                max="11">
+            </div>
+          </div>
+
+          <div class="flex">
+            <div>
+              <label for="password">PASSWORD</label>
+              <br>
+              <input type="password" class="password-input" pattern="[a-zA-Z0-9]{5,}"
+                title="Enter a password containing at least 5 alphanumeric characters" autocomplete="current-password"
+                required>
+            </div>
+
+            <div>
+              <label for="confirmpassword">CONFIRM PASSWORD</label>
+              <br>
+              <input type="password" class="password-input" pattern="[a-zA-Z0-9]{5,}"
+                title="Re-enter the same password">
+            </div>
+          </div>
 
           <label for="confirmpassword">Confirm Password</label>
           <input type="password">
