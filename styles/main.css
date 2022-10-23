@@ -161,28 +161,3 @@ button#button {
 .password-input {
   border: 1px solid red;
 }
-
-/* Media Queries */
-
-/* Mobile */
-@media screen and (
-  max-width: 768px
-) {
-  body>div {
-    flex-direction: column;
-  }
-
-  #pic-bg {
-    width: 100%;
-    height: 37.3%;
-  }
-
-  #logo-bg {
-    padding: 15px;
-  }
-
-  #text-bg {
-    width: 100%;
-    height: 62.7%;
-  }
-}
