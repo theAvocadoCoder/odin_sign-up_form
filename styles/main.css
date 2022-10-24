@@ -61,42 +61,38 @@ body>div {
   height: 100%;
   background-color: snow;
   justify-content: center;
-  gap: 2;
 }
 
-#text-bg > div#writeup-div {
-  padding-left: 30px;
-  padding-top: 11%;
-  padding-right: 100px;
-  padding-bottom: 40px;
+#writeup-div {
+  padding: 30px;
+  width: 90%;
   font-size: 15px;
   font-weight: bolder;
   font-family: sans-serif;
 }
 
-#text-bg > div#form-bg {
+#main-form-div {
   background-color: white;
-  height: 29.5%;
-  padding: 10px 30px;
+  height: fit-content;
+  padding: 10px 10px 20px 30px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.13);
   font-size: 15px;
   font-family: sans-serif;
   font-weight: 600;
 }
 
-form {
-  gap: 10px;
+#form-elements-div {
+  width: fit-content;
+  max-width: 400px;
   margin-top: 10px;
+  align-content: center;
+  height: 90%;
+  column-gap: 50px;
 }
 
-#form-bg > form label {
+form label {
   font-size: 8px;
   font-weight: bold;
-
-}
-
-form > div {
-  gap: 40px;
 }
 
 form input {
@@ -119,7 +115,7 @@ input:focus {
   color: red;
 }
 
-button#button {
+#button {
   border: none;
   padding: 9px 35px;
   border-radius: 5px;
@@ -127,11 +123,20 @@ button#button {
   font-size: 12px;
   font-weight: 600;
   color: white;
+  margin: 20px 30px;
+  width:fit-content;
 }
 
-#control-div > span {
-  margin-top: 20px;
+#log-in-text {
+  font-weight: 600;
+  margin-left: 30px;
+  font-size: 12px;
   display: block;
+}
+
+#log-in-text>a {
+  text-decoration: none;
+  color: orangered;
 }
 
 /* Classes */
@@ -141,6 +146,10 @@ button#button {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .h-screen {
@@ -159,6 +168,6 @@ button#button {
   width: 100%;
 }
 
-.password-input {
+.error {
   border: 1px solid red;
 }
