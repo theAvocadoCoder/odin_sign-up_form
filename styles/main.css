@@ -113,10 +113,10 @@ input:focus {
   box-shadow: 1px 1px 2px lightgray;
 }
 
-#text-bg > div#control-div {
-  height: 29.5%;
-  padding: 20px 30px;
-  font-size: 12px;
+#password-error-message {
+  display: block;
+  font-size: .5em;
+  color: red;
 }
 
 button#button {
