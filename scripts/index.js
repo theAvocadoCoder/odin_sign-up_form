@@ -7,6 +7,7 @@ function checkPasswordMatch() {
 }
 
 function displayErrorMessage() {
+  removeErrorMessage();
   const textNode = document.createTextNode("* Passwords do not match");
   passwordInput.classList.toggle("error", true);
   confirmPasswordInput.classList.toggle("error", true);
