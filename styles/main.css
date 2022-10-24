@@ -4,6 +4,7 @@
 :root {
   --serif: "Bodoni Moda", serif;
   --sans-serif: "Montserrat", sans-serif;
+  --img-bg: url("https://res.cloudinary.com/theavocadocoder/image/upload/v1647702348/zemakech-images/shawarma-close-up3_ywopg3.jpg");
 }
 
 body, body::after, body::before {
@@ -28,7 +29,7 @@ body>div {
 }
 
 #pic-bg {
-  background-image: url("https://res.cloudinary.com/theavocadocoder/image/upload/v1647702348/zemakech-images/shawarma-close-up3_ywopg3.jpg");
+  background-image: var(--img-bg);
   width: 37.3%;
   height: 100%;
 }
